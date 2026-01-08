@@ -1,0 +1,207 @@
+/* ==========================================================================
+   1. SETTINGS & TOOLS
+   ========================================================================== */
+/* ==========================================================================
+   2. GENERIC & ELEMENTS
+   ========================================================================== */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #003049;
+}
+
+a {
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   3. COMPONENTS
+   ========================================================================== */
+.c-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  background-color: #ffffff;
+  border: 2px solid #003049;
+  color: #003049;
+  border-radius: 50%;
+  display: none;
+  z-index: 1050;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.c-back-to-top i {
+  font-size: 1.5rem;
+  line-height: 0;
+}
+.c-back-to-top:hover {
+  background-color: #003049;
+  color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.c-header {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.c-header .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #003049;
+}
+.c-header .nav-link:hover {
+  color: #491900;
+}
+
+.c-hero__title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.8rem;
+  border-radius: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.c-btn--primary {
+  background-color: #003049;
+  color: #ffffff;
+}
+.c-btn--primary:hover {
+  background-color: transparent;
+  color: #003049;
+  border-color: #003049;
+  transform: translateY(-5px);
+}
+.c-btn--outline {
+  background-color: transparent;
+  border-color: rgba(0, 48, 73, 0.15);
+  color: #003049;
+}
+.c-btn--outline:hover {
+  background-color: #003049;
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+.c-btn--small {
+  padding: 0.7rem 1.8rem;
+  font-size: 0.7rem;
+}
+
+.c-input {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  background-color: #f1f3f5;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.c-input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #003049;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+.c-skill-pill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.c-skill-pill:hover {
+  background: #ffffff;
+  color: #003049;
+  transform: translateX(10px);
+}
+
+.c-work-card {
+  position: relative;
+  aspect-ratio: 16/10;
+  cursor: pointer;
+}
+.c-work-card__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.c-work-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 48, 73, 0.9), transparent);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.c-work-card:hover .c-work-card__img {
+  transform: scale(1.08);
+}
+.c-work-card:hover .c-work-card__overlay {
+  opacity: 1;
+}
+
+.c-service-card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.c-service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08) !important;
+}
+
+.c-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  z-index: 1000;
+}
+
+/* ==========================================================================
+   4. UTILITIES
+   ========================================================================== */
+.py-6 {
+  padding: 5.5rem 0;
+}
+
+.u-bg-primary {
+  background-color: #003049 !important;
+}
+
+.shadow-2xl {
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.2);
+}
+
+.ls-wide {
+  letter-spacing: 0.15em;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op met Robard Studio in Oostende. Laten we samen jouw merk naar een hoger niveau tillen.">
+    <title>Contact | Robard Studio</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+
+    <header class="c-header sticky-top">
+        <nav class="navbar navbar-expand-lg container py-3">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Robard</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+                <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="over-mij.html">Over mij</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="work.html">Work</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="diensten.html">Diensten</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="c-btn c-btn--primary c-btn--small" href="contact.html">Werk samen</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+
+    <main>
+        <section class="py-6 bg-white">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <h1 class="display-3 fw-bold mb-4">Heb je een project in gedachten? <span class="text-primary">Ik denk graag met je mee.</span></h1>
+                        <p class="lead text-muted mb-5">
+                            Klaar om je merk naar een hoger niveau te tillen? Vul het formulier in of gebruik een van de directe lijnen hieronder.
+                        </p>
+
+                        <div class="c-contact-methods mb-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="c-icon-box me-3 u-bg-light p-3 rounded-circle"><i class="bi bi-envelope text-primary fs-4"></i></div>
+                                <div>
+                                    <p class="mb-0 small text-muted text-uppercase fw-bold">E-mail</p>
+                                    <a href="mailto:rob.derycke@gmail.com" class="text-dark fw-bold text-decoration-none h5">rob.derycke@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="c-icon-box me-3 u-bg-light p-3 rounded-circle"><i class="bi bi-geo-alt text-primary fs-4"></i></div>
+                                <div>
+                                    <p class="mb-0 small text-muted text-uppercase fw-bold">Locatie</p>
+                                    <p class="text-dark fw-bold mb-0 h5">Oostende, België</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="c-socials">
+                            <p class="small text-muted text-uppercase fw-bold mb-3">Volg mijn proces</p>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="c-btn c-btn--outline c-btn--small rounded-circle p-2"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="c-btn c-btn--outline c-btn--small rounded-circle p-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.behance.net/robderycke" class="c-btn c-btn--outline c-btn--small rounded-circle p-2"><i class="bi bi-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="c-contact-form p-5 bg-light rounded-5">
+                            <form id="js-contact-form">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label small fw-bold">Naam</label>
+                                        <input type="text" id="name" class="form-control c-input" placeholder="Je naam" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label small fw-bold">E-mail</label>
+                                        <input type="email" id="email" class="form-control c-input" placeholder="hallo@voorbeeld.be" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="type" class="form-label small fw-bold">Type Project</label>
+                                        <select id="type" class="form-select c-input">
+                                            <option selected disabled>Kies een dienst...</option>
+                                            <option value="branding">Graphic Design & Branding</option>
+                                            <option value="webdesign">Web Design & Dev</option>
+                                            <option value="content">Photography & Video</option>
+                                            <option value="marketing">Marketing Strategie</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label small fw-bold">Projectomschrijving</label>
+                                        <textarea id="message" class="form-control c-input" rows="5" placeholder="Vertel me kort over je plannen..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="small text-muted mb-4"><i class="bi bi-clock me-1"></i> Ik reageer doorgaans binnen 24 uur op werkdagen.</p>
+                                        <button type="submit" class="c-btn c-btn--primary w-100">Verzend Aanvraag</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="form-feedback" class="mt-4 d-none text-center p-3 rounded-4 bg-success-subtle text-success fw-bold">
+                                <i class="bi bi-check-circle-fill me-2"></i> Bedankt! Je bericht is onderweg.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 bg-dark text-white text-center">
+        <p class="small opacity-50 mb-0">Copyright &copy; 2026 Robard. All Rights Served.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
